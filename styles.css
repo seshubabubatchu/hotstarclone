@@ -89,6 +89,9 @@ body {
   .rightlistinside div {
     margin-top: 50px;
   }
+   .rightlistinside .searchbar input {
+    border-bottom: none !important;
+  }
   .leftitem {
     width: 50vw;
     height: 100vh;
