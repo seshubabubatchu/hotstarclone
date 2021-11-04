@@ -1,5 +1,202 @@
-<html>
-<body>
-<h1>Hotstar CLone</h1>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotstar Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="header">
+      <div class="headercontainer">
+        <div class="leftlist">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="logo">
+            <img src="./assets/images/logo.svg" alt="" />
+          </div>
+          <ul class="leftitem">
+            <li><a href="#">TV</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Disney+</a></li>
+            <li>
+              <a href="#"><img src="./assets/images/kids.svg" alt="" /></a>
+            </li>
+            <button class="leftitemclose">X</button>
+            <div class="rightlist rightlistinside">
+              <div class="searchbar">
+                <input type="text " placeholder="Search" />
+              </div>
+              <div class="subscribebtn">
+                <button>Subscribe</button>
+              </div>
+              <div class="login">
+                <button>Login</button>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <div class="rightlist">
+          <div class="searchbar">
+            <input type="text " placeholder="Search" />
+          </div>
+          <div class="subscribebtn">
+            <button>Subscribe</button>
+          </div>
+          <div class="login">
+            <button>Login</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="body">
+      <div class="carouselslider">
+        <div class="carousel">
+          <div class="slides">
+            <!-- <div class="slide">
+              <div class="slidecontent">
+                <div class="contentcontainer">
+                  <h1 class="title">Loki</h1>
+                  <div class="hashtags">
+                    <ul>
+                      <li>Marvel</li>
+                      <li>Superhero</li>
+                    </ul>
+                  </div>
+                  <div class="description">
+                    The mercurial villain Loki resumes his role as the God of
+                    Mischief in a new series that takes place after the events
+                    of “Avengers: Endgame.”
+                  </div>
+                </div>
+              </div>
+              <div class="imagecontent">
+                <img src="./assets/images/slide1.webp" alt="" />
+              </div>
+            </div> -->
+          </div>
+          <button class="prevbtn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="nextbtn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="animatedlayout">
+        <div class="animatedcontainer">
+          <div class="animatedcard">
+            <img src="./assets/images/animated/v1.webp" alt="" />
+            <video
+              src="./assets/images/animated/v1.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+          <div class="animatedcard">
+            <img src="./assets/images/animated/v2.webp" alt="" />
+            <video
+              src="./assets/images/animated/v2.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+          <div class="animatedcard">
+            <img src="./assets/images/animated/v3.webp" alt="" />
+            <video
+              src="./assets/images/animated/v3.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+          <div class="animatedcard">
+            <img src="./assets/images/animated/v4.webp" alt="" />
+            <video
+              src="./assets/images/animated/v4.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+          <div class="animatedcard">
+            <img src="./assets/images/animated/v5.webp" alt="" />
+            <video
+              src="./assets/images/animated/v5.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+        </div>
+      </div>
+      <h1 class="Headingl1">Recommended For You</h1>
+      <div class="cardContainer">
+        <!-- <button class="prevbtn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="nextbtn">
+          <i class="fas fa-chevron-right"></i>
+        </button> -->
+        <!-- <div class="card">
+          <img src="./assets/images/new/1.jpg" alt="" />
+          <div class="contentcard">
+            <div class="cardtitle">Aladdin</div>
+            <div class="carddescription">
+              2 hr 10min,Fantasy, Adventure, Musical, English, Hindi, Tamil,
+              Telugu, 2019,In this live-action retelling of 1992 classic,
+              Aladdin and a power-hungry Grand Vizier vie for a mag ...
+            </div>
+            <div class="cardbuttons">
+              <button>Watch Movie</button>
+              <button>Add to watchlist</button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <h1 class="Headingl1">Beasts and Monsters</h1>
+      <div class="monsterscontainer cardContainer">
+        <!-- <button class="prevbtn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="nextbtn">
+          <i class="fas fa-chevron-right"></i>
+        </button> -->
+      </div>
+      <h1 class="Headingl1">Reimagined Classics</h1>
+      <div class="classiccontainer cardContainer">
+        <!-- <button class="prevbtn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="nextbtn">
+          <i class="fas fa-chevron-right"></i>
+        </button> -->
+      </div>
+    </section>
+    <section class="footer">
+      <p>
+        © 2021 . All Rights Reserved. This is a Cloned version of Hotstar ,
+        Technologies used : HTML , CSS , Javascript Slides and all cards were
+        created using Javascript
+      </p>
+    </section>
+    <script src="./main.js"></script>
+  </body>
 </html>
