@@ -122,10 +122,10 @@ function nextslide() {
   counter++;
   slidescontainer.style.transform =
     "translateX(" + -(slidewidth * counter) + "px)";
-  // setTimeout(nextslide, 5000);
+   setTimeout(nextslide, 5000);
 }
 
-// nextslide();
+ nextslide();
 function prevslide() {
   if (counter <= 0) return;
   slidescontainer.style.transition = "transform 0.4s ease-in-out";
