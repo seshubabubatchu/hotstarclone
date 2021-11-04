@@ -1,0 +1,418 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #131a28;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+.headercontainer {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.leftlist {
+  display: flex;
+  align-items: center;
+}
+.leftlist .logo img {
+  width: 175px;
+}
+.rightlist {
+  display: flex;
+  align-items: center;
+}
+.rightlist div {
+  margin-right: 30px;
+}
+.searchbar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+}
+.searchbar input::placeholder {
+  color: white;
+}
+.subscribebtn button {
+  background: #1f80e0;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 8px;
+  color: white;
+}
+.login button {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 8px;
+  outline: none;
+  border: none;
+  color: white;
+  background: transparent;
+}
+.leftitem {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.leftlist .hamburger {
+  display: none;
+}
+.leftitemclose {
+  display: none;
+}
+.rightlistinside {
+  display: none;
+}
+@media screen and (max-width: 1025px) {
+  .rightlist {
+    display: none;
+  }
+  .rightlistinside {
+    flex-direction: column;
+    display: inline-block;
+  }
+  .rightlistinside div {
+    margin-top: 50px;
+  }
+  .leftitem {
+    width: 50vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 0px;
+    transition: transform 0.4s ease-in-out;
+    transform: translateX(-100%);
+  }
+  .leftitem li {
+    margin: 30px 0px;
+  }
+  .leftlist .hamburger {
+    display: flex;
+  }
+  .leftitemclose {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 25px;
+  }
+  .animatedcontainer {
+    flex-direction: column;
+  }
+  .animatedcard {
+    margin: 50px auto;
+  }
+  .slide {
+    display: flex;
+    flex-direction: column;
+  }
+  .slide .slidecontent {
+    width: 100%;
+    height: 45%;
+    bottom: 0;
+    background: linear-gradient(to top, #030b17 80%, #0c111b00);
+  }
+  .slide .imagecontent {
+    width: 100%;
+  }
+  .slidecontent .contentcontainer {
+    padding-left: 0;
+    margin: auto;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slide .slidecontent {
+    display: none;
+  }
+  .imagecontent img {
+    object-fit: contain !important;
+  }
+}
+.leftitem li a {
+  margin-right: 35px;
+  text-decoration: none;
+  color: white;
+}
+.hamburger {
+  margin-right: 30px;
+  width: 40px;
+  height: 30px;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hamburger span {
+  width: 20px;
+  height: 2px;
+  margin-top: 5px;
+  background-color: white;
+}
+
+.carouselslider {
+  overflow-x: hidden;
+  width: 100%;
+  /* height: 60vh; */
+  /* min-height: 700px; */
+  height: auto;
+  min-height: auto;
+  position: relative;
+  color: white;
+  padding: 50px 0px;
+}
+.carousel {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  height: 100%;
+}
+.slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.prevbtn {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  background: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 60px;
+}
+.nextbtn:hover,
+.prevbtn:hover {
+  cursor: pointer;
+}
+.nextbtn {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  background: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 60px;
+}
+.slide {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-right: 20px;
+}
+.slidecontent {
+  position: absolute;
+  height: 100%;
+  width: 40%;
+  align-items: center;
+  z-index: 1;
+  background: linear-gradient(to right, #030b17 80%, #0c111b00);
+}
+.contentcontainer {
+  z-index: inherit;
+  padding-left: 10%;
+  padding-top: 50px;
+}
+.contentcontainer .title {
+  font-size: 32px;
+}
+.hashtags ul {
+  display: flex;
+  padding-left: 0;
+}
+.hashtags ul li {
+  padding-right: 30px;
+}
+.hashtags ul li:nth-child(1) {
+  list-style: none;
+  padding-left: 0;
+}
+
+.hashtags ul li,
+.description {
+  font-size: 22px;
+}
+.imagecontent {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+}
+.slide img {
+  display: block;
+  margin-left: auto;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.cardContainer {
+  display: flex;
+  overflow-x: scroll;
+  padding: 20px 30px;
+}
+.card {
+  flex: 0 0 auto;
+  margin-right: 40px;
+  position: relative;
+  color: white;
+  width: 220px;
+  height: 292px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover .contentcard {
+  visibility: visible;
+}
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.card .contentcard {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  visibility: hidden;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background: linear-gradient(to top, #030b17 70%, #0c111b00);
+}
+.contentcard .cardtitle {
+  font-weight: bold;
+}
+.contentcard .carddescription {
+  font-size: 12px;
+}
+.cardbuttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.cardbuttons button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.cardbuttons button img {
+  width: 15px;
+  padding: 0px 1px;
+  display: inline-block;
+}
+.card:hover .card .contentcard {
+  display: block;
+}
+.animatedcard {
+  width: 350px;
+  height: 197px;
+  position: relative;
+}
+.animatedcard:hover {
+  cursor: pointer;
+}
+.animatedcard:hover img {
+  display: none;
+}
+.animatedcard img {
+  z-index: 1;
+}
+.animatedcard video,
+.animatedcard img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.animatedcontainer {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.currentslide {
+  display: none;
+}
+.footer {
+  width: 95%;
+  margin: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Headingl1 {
+  width: 98%;
+  font-weight: bold;
+  color: white;
+  margin-left: auto;
+}
+.cardContainer {
+  position: relative;
+}
+.cardContainer .prevbtn,
+.nextbtn {
+  position: absolute;
+  color: white;
+  font-size: 60px;
+  border: none;
+  outline: none;
+  top: 50%;
+  z-index: 2;
+}
+.cardContainer .prevbtn {
+  left: 0;
+}
+.cardContainer .nextbtn {
+  right: 0;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
